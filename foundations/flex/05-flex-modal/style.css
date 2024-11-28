@@ -20,6 +20,9 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  padding: 15px;
+  gap: 15px;
 }
 
 .icon {
@@ -33,6 +36,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.question {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+}
+
+.text {
+  margin-bottom: 15px;
 }
 
 .close-button {
@@ -47,6 +68,9 @@ body {
   align-items: center;
   justify-content: center;
   border: 1px solid #eee;
+  flex-shrink: 0;
+  /* reset padding so this doesn't get it from button type below, 
+  makes an ellipse with that amount of padding */
   padding: 0;
 }
 
