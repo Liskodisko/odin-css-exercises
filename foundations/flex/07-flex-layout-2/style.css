@@ -10,10 +10,9 @@ body {
 }
 
 .main {
-  height: 100%;
+  min-height: inherit;
   display: flex;
   flex-direction: column;
-  align-content: space-between;
 }
 
 .header {
@@ -22,7 +21,6 @@ body {
   color: white;
   display: flex;
   align-items: center;
-  margin-bottom: auto;
 }
 
 .titlename {
@@ -36,12 +34,15 @@ body {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: auto;
 }
 
 .content {
   display: flex;
-
+  flex: 1;
 }
 
 .sidebar {
@@ -62,10 +63,14 @@ li {
   margin: 10px 0;
 }
 
-a {
+li a {
   text-decoration: none;
   color: white;
   font-size: 24px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .cards {
@@ -79,7 +84,6 @@ a {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
-  width: 250px;
-  height: 270px;
+  width: 270px;
   padding: 10px;
 }
